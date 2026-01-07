@@ -14,6 +14,7 @@
       * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
       body {
         font-family: "Ubuntu", sans-serif;
@@ -27,7 +28,7 @@
         justify-content: space-around;
         align-items: center;
         height: 65px;
-        background-color: rgb(9, 9, 79);
+        background-color: rgb(3, 78, 132);
       }
       .right ul {
         list-style: none;
@@ -40,7 +41,7 @@
       .left {
         font-size: 1.6rem;
       }
-      .heroSec{
+      .heroSec {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -51,29 +52,101 @@
         font-size: 30px;
       }
       .rightSection {
-        margin-top: 40px ;
+        margin-top: 40px;
         width: 30%;
       }
-      .rightSection img{
+      .rightSection img {
         width: 100%;
         height: auto;
         border-radius: 10%;
-        margin-bottom: 30px ;
+        margin-bottom: 30px;
       }
-      .purpal{
+      .purpal {
         color: rgb(6, 151, 255);
       }
-      .right ul li a{
+      .right ul a {
         text-decoration: none;
         color: white;
       }
-      .right ul li:hover{
+      .right ul li:hover {
         font-size: 1.2rem;
       }
-      #element{
+      #element {
         font-weight: bold;
         color: rgb(6, 151, 255);
-
+      }
+      .line {
+        margin: 20px 100px;
+        border: 1px solid rgb(6, 151, 255);
+      }
+      .education {
+        margin: 20px 100px;
+        border: 1px solid rgb(6, 151, 255);
+      }
+      .edp {
+        margin-left: 200px;
+      }
+      .edp p {
+        color: gray;
+        font-size: 30px;
+      }
+      .edp h2 {
+        color: white;
+        font-size: 40px;
+      }
+      .box1 {
+        margin: 50px 80px;
+        width: 280px;
+        /* overflow: hidden; */
+        box-shadow: 0 0 50px rgba(99, 12, 214, 0.958);
+      }
+      .box1 img {
+        height: 180px;
+        width: 280px;
+        /* background-color: white; */
+        border-radius: 10px;
+      }
+      .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 15px;
+        font-size: 13px;
+      }
+      .box1:hover img {
+        transform: scale(1.05);
+        transition: 0.3s ease;
+      }
+      .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      footer {
+        height: 130px;
+        background-color: rgba(107, 106, 106, 0.154);
+      }
+      .footer {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .footer ul a{
+        list-style: none;
+        gap: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      .footerRight{
+        margin-top: 10px;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        bottom: 0;
       }
     </style>
   </head>
@@ -83,38 +156,174 @@
         <span class="left">Akash's Portfolio </span>
         <div class="right">
           <ul>
-            <a href="/">  <li>Home</a></li>
-            <a href="/">  <li>About Me</a></li>
-            <a href="/">  <li>Services</a></li>
-            <a href="/">  <li>Projects</a></li>
-            <a href="/">  <li>Contact</a></li>
+            <a href="/"><li>Home</li></a>
+            <a href="/"><li>About</li></a>
+            <a href="/"><li>Services</li></a>
+            <a href="/"><li>Projects</li></a>
+            <a href="/"><li>Contact</li></a>
           </ul>
         </div>
       </nav>
     </header>
-    <hr>
     <main>
       <section class="heroSec">
         <div class="leftSection">
-            <h1>Hi, My name is <span class="purpal">Akash</span> </h1>
-            <span id="element">And I am Web Developer </span>
+          <h1>Hi, My name is <span class="purpal">Akash</span></h1>
+          <span id="element">And I am Web Developer </span>
         </div>
         <div class="rightSection">
-            <img src="/portfolio.jpeg" alt="portfolio">
+          <img src="/portfolio.jpeg" alt="portfolio" />
         </div>
       </section>
-      <hr>
-
+      <hr class="line" />
       <section>
-        
+        <div class="edp">
+          <p>What I have...</p>
+          <h2>Work Experties</h2>
+        </div>
+        <div class="education"></div>
+
+        <div class="boxes">
+          <div class="box1">
+            <div class="img">
+              <img src="/html.png" />
+            </div>
+            <div class="text">
+              <div>
+                <h3>HTML Developer</h3>
+                <p>Build clean SEO-friendly page using moder HTML5.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box1">
+            <div class="img">
+              <img src="/css.png" />
+            </div>
+            <div class="text">
+              <div>
+                <h3>CSS Developer</h3>
+                <p>Design responsive design animation with modern UI style.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box1">
+            <div class="img">
+              <img src="/javascript.png" />
+            </div>
+            <div class="text">
+              <div>
+                <h3>JavaScript Developer</h3>
+                <p>Create dynamic interactive ebdesign with experiences .</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box1">
+            <div class="img">
+              <img src="/react.png" />
+            </div>
+            <div class="text">
+              <div>
+                <h3>React.js Developer</h3>
+                <p>
+                  Develop fast and scalable single page application using Reat.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box1">
+            <div class="img">
+              <img src="/nodejs.png" />
+            </div>
+            <div class="text">
+              <div>
+                <h3>Node.js Developer</h3>
+                <p>
+                  Design and maintain high-performance backend sysytem using
+                  Node.js.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box1">
+            <div class="img">
+              <img src="/mongodb.png" />
+            </div>
+            <div class="text">
+              <div>
+                <h3>MongoDB Developer</h3>
+                <p>
+                  Design and manage flexible, high-performance NoSQL database.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box1">
+            <div class="img">
+              <img src="/mysql.png" />
+            </div>
+            <div class="text">
+              <div>
+                <h3>My Developer</h3>
+                <p>
+                  Build and optimise structured relational database with MySQL.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box1">
+            <div class="img">
+              <img src="/python.png" />
+            </div>
+            <div class="text">
+              <div>
+                <h3>Python Developer</h3>
+                <p>
+                  Pyhton in the filed of data Science also on web developer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <footer>
+        <div class="footer">
+          <h4>AKas'sPortfolio</h4>
+          <ul>
+            <a href="/"><li>Home</li></a>
+            <a href="/"><li>About</li></a>
+            <a href="/"><li>Services</li></a>
+            
+          </ul>
+          <ul>
+           <a href="/"><li>Projects</li></a>
+            <a href="/"><li>Contact</li></a>
+          </ul>
+
+        </div>
+        <div class="footerRight">
+          Copyright &copy;2026 Akash'sPortfolio | All right reserved
+        </div>
+      </footer>
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-    var typed = new Typed('#element', {
-      strings: ['And I am Web Developer.','Data Science Learner.','And I am Web Developer.','Turn your ideas into reality. ' ],
-      typeSpeed: 80,
-    });
-  </script>
+      var typed = new Typed("#element", {
+        strings: [
+          "And I am Web Developer.",
+          "Data Science Learner.",
+          "And I am Web Developer.",
+          "Turn your ideas into reality. ",
+        ],
+        typeSpeed: 80,
+      });
+    </script>
   </body>
 </html>

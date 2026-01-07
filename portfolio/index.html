@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akash's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        background-color: black;
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 65px;
+        background-color: rgb(9, 9, 79);
+      }
+      .right ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        margin: 0 20px;
+      }
+      .left {
+        font-size: 1.6rem;
+      }
+      .heroSec{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 40px;
+      }
+      .leftSection {
+        width: 35%;
+        font-size: 30px;
+      }
+      .rightSection {
+        margin-top: 40px ;
+        width: 30%;
+      }
+      .rightSection img{
+        width: 100%;
+        height: auto;
+        border-radius: 10%;
+        margin-bottom: 30px ;
+      }
+      .purpal{
+        color: rgb(6, 151, 255);
+      }
+      .right ul li a{
+        text-decoration: none;
+        color: white;
+      }
+      .right ul li:hover{
+        font-size: 1.2rem;
+      }
+      #element{
+        font-weight: bold;
+        color: rgb(6, 151, 255);
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span class="left">Akash's Portfolio </span>
+        <div class="right">
+          <ul>
+            <a href="/">  <li>Home</a></li>
+            <a href="/">  <li>About Me</a></li>
+            <a href="/">  <li>Services</a></li>
+            <a href="/">  <li>Projects</a></li>
+            <a href="/">  <li>Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <hr>
+    <main>
+      <section class="heroSec">
+        <div class="leftSection">
+            <h1>Hi, My name is <span class="purpal">Akash</span> </h1>
+            <span id="element">And I am Web Developer </span>
+        </div>
+        <div class="rightSection">
+            <img src="/portfolio.jpeg" alt="portfolio">
+        </div>
+      </section>
+      <hr>
+
+      <section>
+        
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['And I am Web Developer.','Data Science Learner.','And I am Web Developer.','Turn your ideas into reality. ' ],
+      typeSpeed: 80,
+    });
+  </script>
+  </body>
+</html>

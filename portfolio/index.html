@@ -133,20 +133,33 @@
         justify-content: space-around;
         align-items: center;
       }
-      .footer ul a{
+      .footer ul a {
         list-style: none;
         gap: 10px;
         color: white;
         text-decoration: none;
         font-size: 14px;
       }
-      .footerRight{
+      .footerRight {
         margin-top: 10px;
         font-size: 10px;
         display: flex;
         justify-content: center;
         align-self: center;
         bottom: 0;
+      }
+
+      .btn button {
+        height: 40px;
+        width: 170px;
+        margin-top: 30px;
+        padding: 10px;
+        color: purple;
+        border-radius: 5px;
+        border: none;
+      }
+      .btn button:hover {
+        font-size: 18px;
       }
     </style>
   </head>
@@ -170,6 +183,11 @@
         <div class="leftSection">
           <h1>Hi, My name is <span class="purpal">Akash</span></h1>
           <span id="element">And I am Web Developer </span>
+
+          <div class="btn">
+            <button>Download my CV</button>
+            <button>GitHub</button>
+          </div>
         </div>
         <div class="rightSection">
           <img src="/portfolio.jpeg" alt="portfolio" />
@@ -300,13 +318,11 @@
             <a href="/"><li>Home</li></a>
             <a href="/"><li>About</li></a>
             <a href="/"><li>Services</li></a>
-            
           </ul>
           <ul>
-           <a href="/"><li>Projects</li></a>
+            <a href="/"><li>Projects</li></a>
             <a href="/"><li>Contact</li></a>
           </ul>
-
         </div>
         <div class="footerRight">
           Copyright &copy;2026 Akash'sPortfolio | All right reserved
